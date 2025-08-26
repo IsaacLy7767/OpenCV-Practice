@@ -14,7 +14,7 @@ def changeRes(width, height): # Change resolution function
     vid.set(3, width) # Changes width
     vid.set(4, height) # Changes height
 
-vid = cv.VideoCapture() # Read video from file and set instnace to variable
+vid = cv.VideoCapture('TestVideo.mp4') # Read video from file and set instnace to variable
 
 while True: 
     isTrue, frame = vid.read() # Use loop to grab video frame by frame
